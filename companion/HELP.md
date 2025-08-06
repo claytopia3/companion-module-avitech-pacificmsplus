@@ -1,3 +1,3 @@
-## Your module
+## Avitech Pacific MS Series Control Module
 
-Write some help for your users here!
+This is a module for the Avitech Pacific MS Series

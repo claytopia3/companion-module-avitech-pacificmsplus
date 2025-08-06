@@ -1,16 +1,16 @@
 {
-	"id": "your-module-name",
-	"name": "your-module-name",
-	"shortname": "module-shortname",
-	"description": "A short one line description of your module",
-	"version": "0.0.0",
+	"id": "avitech-pacific",
+	"name": "avitech-pacific",
+	"shortname": "avitech-pacific",
+	"description": "Control module for the Avitech Pacific MS Series",
+	"version": "1.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-your-module-name.git",
-	"bugs": "https://github.com/bitfocus/companion-module-your-module-name/issues",
+	"repository": "git+https://github.com/claytopia3/companion-module-avitech-pacific.git",
+	"bugs": "https://github.com/claytopia3/companion-module-avitech-pacific/issues",
 	"maintainers": [
 		{
-			"name": "Your name",
-			"email": "Your email"
+			"name": "Clay Avery",
+			"email": "clay@claytoncreative.com"
 		}
 	],
 	"runtime": {
@@ -20,7 +20,7 @@
 		"entrypoint": "../dist/main.js"
 	},
 	"legacyIds": [],
-	"manufacturer": "Your company",
-	"products": ["Your product"],
+	"manufacturer": "Avitech",
+	"products": ["Pacific MS Series"],
 	"keywords": []
 }
