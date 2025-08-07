@@ -5,8 +5,8 @@
 	"description": "Control module for the Avitech Pacific MS-1",
 	"version": "1.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/claytopia3/companion-module-avitech-pacific.git",
-	"bugs": "https://github.com/claytopia3/companion-module-avitech-pacific/issues",
+	"repository": "git+https://github.com/claytopia3/companion-module-avitech-pacific-ms1.git",
+	"bugs": "https://github.com/claytopia3/companion-module-avitech-pacific-ms1/issues",
 	"maintainers": [
 		{
 			"name": "Clay Avery",
