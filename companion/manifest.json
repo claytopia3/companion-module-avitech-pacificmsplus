@@ -1,8 +1,8 @@
 {
-	"id": "avitech-pacific",
-	"name": "avitech-pacific",
-	"shortname": "avitech-pacific",
-	"description": "Control module for the Avitech Pacific MS Series",
+	"id": "avitech-pacific-ms1",
+	"name": "avitech-pacific-ms1",
+	"shortname": "avitech-pacific-ms1",
+	"description": "Control module for the Avitech Pacific MS-1",
 	"version": "1.0.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/claytopia3/companion-module-avitech-pacific.git",
@@ -21,6 +21,6 @@
 	},
 	"legacyIds": [],
 	"manufacturer": "Avitech",
-	"products": ["Pacific MS Series"],
+	"products": ["Pacific MS-1"],
 	"keywords": []
 }
