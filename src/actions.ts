@@ -27,7 +27,7 @@ export function httpSend(self: ModuleInstance, host: string, port: number, url: 
 }
 
 export function UpdateActions(self: ModuleInstance): void {
-	const labels_tooltip_str =
+	const omit_char_str =
 		'Cannot contain spaces or any of the following characters: ' +
 		'< > ! @ # & $ % ^ & * " ' +
 		"' " +
@@ -79,7 +79,7 @@ export function UpdateActions(self: ModuleInstance): void {
 					id: 'set_machinename_str',
 					type: 'textinput',
 					label: 'Machine Name',
-					tooltip: labels_tooltip_str,
+					tooltip: omit_char_str,
 				},
 			],
 			name: 'Set Machine Name',
@@ -142,92 +142,51 @@ export function UpdateActions(self: ModuleInstance): void {
 			},
 		},
 
-		set_labels_action: {
-			name: 'Set Labels',
+		set_label_action: {
+			name: 'Set Label',
 			options: [
 				{
-					id: 'port1_str',
+					type: 'dropdown',
+					id: 'port_dropdown',
+					label: 'Port',
+					default: '1',
+					choices: [
+						{ id: '1', label: '1' },
+						{ id: '2', label: '2' },
+						{ id: '3', label: '3' },
+						{ id: '4', label: '4' },
+						{ id: '5', label: '5' },
+						{ id: '6', label: '6' },
+						{ id: '7', label: '7' },
+						{ id: '8', label: '8' },
+						{ id: '9', label: '9' },
+						{ id: '10', label: '10' },
+						{ id: '11', label: '11' },
+						{ id: '12', label: '12' },
+						{ id: '13', label: '13' },
+						{ id: '14', label: '14' },
+						{ id: '15', label: '15' },
+						{ id: '16', label: '16' },
+						{ id: '17', label: '17' },
+						{ id: '18', label: '18' },
+						{ id: '19', label: '19' },
+						{ id: '20', label: '20' },
+						{ id: '21', label: '21' },
+						{ id: '22', label: '22' },
+						{ id: '23', label: '23' },
+						{ id: '24', label: '24' },
+						{ id: '25', label: '25' },
+						{ id: '26', label: '26' },
+						{ id: '27', label: '27' },
+						{ id: '28', label: '28' },
+					],
+				},
+				{
+					id: 'port_str',
 					type: 'textinput',
-					label: 'Port 1',
+					label: 'Label',
 					default: 'Port_1',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port2_str',
-					type: 'textinput',
-					label: 'Port 2',
-					default: 'Port_2',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port3_str',
-					type: 'textinput',
-					label: 'Port 3',
-					default: 'Port_3',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port4_str',
-					type: 'textinput',
-					label: 'Port 4',
-					default: 'Port_4',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port5_str',
-					type: 'textinput',
-					label: 'Port 5',
-					default: 'Port_5',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port6_str',
-					type: 'textinput',
-					label: 'Port 6',
-					default: 'Port_6',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port7_str',
-					type: 'textinput',
-					label: 'Port 7',
-					default: 'Port_7',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port8_str',
-					type: 'textinput',
-					label: 'Port 8',
-					default: 'Port_8',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port9_str',
-					type: 'textinput',
-					label: 'Port 9',
-					default: 'Port_9',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port10_str',
-					type: 'textinput',
-					label: 'Port 10',
-					default: 'Port_10',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port11_str',
-					type: 'textinput',
-					label: 'Port 11',
-					default: 'Port_11',
-					tooltip: labels_tooltip_str,
-				},
-				{
-					id: 'port12_str',
-					type: 'textinput',
-					label: 'Port 12',
-					default: 'Port_12',
-					tooltip: labels_tooltip_str,
+					tooltip: omit_char_str,
 				},
 			],
 
@@ -235,30 +194,10 @@ export function UpdateActions(self: ModuleInstance): void {
 				const ip = self.config.host
 				const port = self.config.port
 				const url =
-					'/cgi-bin/command.cgi?cmd=Info&param=[{"func":"set","type":"genlabel","sib_label":[{"port":1,"label":"' +
-					event.options.port1_str +
-					'"},{"port":2,"label":"' +
-					event.options.port2_str +
-					'"},{"port":3,"label":"' +
-					event.options.port3_str +
-					'"},{"port":4,"label":"' +
-					event.options.port4_str +
-					'"},{"port":5,"label":"' +
-					event.options.port5_str +
-					'"},{"port":6,"label":"' +
-					event.options.port6_str +
-					'"},{"port":7,"label":"' +
-					event.options.port7_str +
-					'"},{"port":8,"label":"' +
-					event.options.port8_str +
-					'"},{"port":9,"label":"' +
-					event.options.port9_str +
-					'"},{"port":10,"label":"' +
-					event.options.port10_str +
-					'"},{"port":11,"label":"' +
-					event.options.port11_str +
-					'"},{"port":12,"label":"' +
-					event.options.port12_str +
+					'/cgi-bin/command.cgi?cmd=Info&param=[{"func":"set","type":"genlabel","sib_label":[{"port":' +
+					event.options.port_dropdown +
+					',"label":"' +
+					event.options.port_str +
 					'"}]}]'
 				httpSend(self, ip, port, url)
 			},
