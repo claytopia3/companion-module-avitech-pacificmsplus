@@ -821,9 +821,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"avitech-pacific-ms1@workspace:.":
+"avitech-pacificplus@workspace:.":
   version: 0.0.0-use.local
-  resolution: "avitech-pacific-ms1@workspace:."
+  resolution: "avitech-pacificplus@workspace:."
   dependencies:
     "@companion-module/base": "npm:~1.11.3"
     "@companion-module/tools": "npm:^2.3.0"

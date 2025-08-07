@@ -1,12 +1,24 @@
 import { Regex, type SomeCompanionConfigField } from '@companion-module/base'
 
 export interface ModuleConfig {
+	model: string
 	host: string
 	port: number
 }
 
 export function GetConfigFields(): SomeCompanionConfigField[] {
 	return [
+		{
+			type: 'dropdown',
+			id: 'model',
+			label: 'Device Model',
+			default: 'modelA',
+			choices: [
+				{ id: 'modelA', label: 'Model A' },
+				{ id: 'modelB', label: 'Model B' },
+			],
+			width: 2,
+		},
 		{
 			type: 'textinput',
 			id: 'host',

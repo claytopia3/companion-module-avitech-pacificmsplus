@@ -1,12 +1,12 @@
 {
-	"id": "avitech-pacific-ms1",
-	"name": "avitech-pacific-ms1",
-	"shortname": "avitech-pacific-ms1",
-	"description": "Control module for the Avitech Pacific MS-1",
+	"id": "avitech-pacificplus",
+	"name": "avitech-pacificplus",
+	"shortname": "avitech-pacificplus",
+	"description": "Control module for the Avitech Pacific Plus Series",
 	"version": "1.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/claytopia3/companion-module-avitech-pacific-ms1.git",
-	"bugs": "https://github.com/claytopia3/companion-module-avitech-pacific-ms1/issues",
+	"repository": "git+https://github.com/claytopia3/companion-module-avitech-pacificplus.git",
+	"bugs": "https://github.com/claytopia3/companion-module-avitech-pacificplus/issues",
 	"maintainers": [
 		{
 			"name": "Clay Avery",
@@ -21,6 +21,6 @@
 	},
 	"legacyIds": [],
 	"manufacturer": "Avitech",
-	"products": ["Pacific MS-1"],
+	"products": ["Pacific Plus"],
 	"keywords": []
 }

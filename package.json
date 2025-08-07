@@ -1,5 +1,5 @@
 {
-	"name": "avitech-pacific-ms1",
+	"name": "avitech-pacificplus",
 	"version": "0.1.0",
 	"main": "dist/main.js",
 	"type": "module",
@@ -16,7 +16,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/claytopia3/companion-module-avitech-pacific-ms1.git"
+		"url": "git+https://github.com/claytopia3/companion-module-avitech-pacific-plus.git"
 	},
 	"engines": {
 		"node": "^22.14",
