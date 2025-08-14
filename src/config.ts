@@ -14,8 +14,8 @@ export function GetConfigFields(): SomeCompanionConfigField[] {
 			label: 'Device Model',
 			default: 'model1',
 			choices: [
-				{ id: 'model1', label: 'MS-1' },
-				{ id: 'model2', label: 'MS-4' },
+				{ id: 'model1', label: 'MS-1 Plus' },
+				{ id: 'model2', label: 'MS-4 Plus' },
 			],
 			width: 2,
 		},
